@@ -15,12 +15,10 @@ export default function App() {
   const [paginate, setpaginate] = useState(8);
 
   useEffect(() => {
-    // restApi("https://pokeapi.co/api/v2/ability/?limit=10&offset=0")
     restApi("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0").then(
-      async (result) => {
+      (result) => {
         setLoaded(true);
-        await setItems(result.results);
-        //console.log("result::", result.results);
+        setItems(result.results);
       },
       (error) => {
         setLoaded(true);
