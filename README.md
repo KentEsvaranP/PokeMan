@@ -2,8 +2,10 @@
 
 ## Pending things to Do
 
-1. Filter to be completed with proper filter category
-2. Pagination full functionality needs to complete with page number selection. As of now using simpel load more option
+1. Filter to be completed with proper filter category. Because, I couldn't able to get the categories for filter in the response data
+2. Pagination full functionality needs to complete with page number selection. As of now using simple load more option. I would like to use 'react-bootstrap/Pagination'. It take some time to close, but this pagination will give us awesome feature. The below modules we can use.
+    import 'bootstrap/dist/css/bootstrap.css';
+    import Pagination from 'react-bootstrap/Pagination';
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
