@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+## Pending things to Do
+
+1. Filter to be completed with proper filter category
+2. Pagination full functionality needs to complete with page number selection. As of now using simpel load more option
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

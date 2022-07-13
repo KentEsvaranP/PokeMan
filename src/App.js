@@ -30,9 +30,9 @@ export default function App() {
   const data = Object.values(items);
 
   const search_parameters = Object.keys(Object.assign({}, ...data));
-  // const filter_items = [...new Set(data.map((item) => item.region))];
+  const filter_items = [...new Set(data.map((item) => item.name))];
   // const search_parameters = [];
-  const filter_items = [];
+  //const filter_items = [];
   function search(items) {
     return items.filter(
       (item) =>
@@ -73,7 +73,7 @@ export default function App() {
               className="custom-select"
               aria-label="Filter Countries By Region"
             >
-              <option value="">Filter By Region</option>
+              <option value="">Filter By Category</option>
               {filter_items.map((item) => (
                 <option value={item}>Filter By {item}</option>
               ))}
@@ -99,6 +99,7 @@ export default function App() {
             ))}
         </ul>
         <button onClick={load_more}>Load More</button>
+        <div className="row"></div>
       </div>
     );
   }
